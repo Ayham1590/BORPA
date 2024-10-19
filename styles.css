@@ -1,0 +1,419 @@
+@font-face {
+    font-family: New;
+    src: url(Celias.ttf);
+}
+
+@font-face {
+    font-family: another;
+    src: url(GentyDemo-Regular.ttf);
+}
+
+body {
+    background-color: #4e9843;
+    margin: 0;
+    font-family: New;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4e9843;
+    padding: 10px;
+    position: relative;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-family: another;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 24px;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-title {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
+}
+
+.hero-section {
+    background-color: #4e9843;
+    padding: 20px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.text-content {
+    max-width: 600px;
+    margin-right: 20px;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+}
+
+.text-content h2 {
+    font-family: another;
+    font-size: 60px;
+}
+
+.hero-image img {
+    width: 700px;
+    height: auto;
+}
+
+.socials {
+    display: flex;
+    margin: 10px 0;
+}
+
+.socials img {
+    width: 70px;
+    height: auto;
+    transition: transform 0.2s;
+}
+
+.socials a {
+    margin-right: 10px;
+}
+
+.contract-address {
+    margin-top: 10px;
+    color: white;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-content {
+        margin-right: 0;
+        margin-bottom: 20px;
+        font-size: 15px;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .hero-image {
+        order: -1;
+    }
+
+    .hero-image img {
+        width: 200px;
+        height: auto;
+    }
+
+    .socials img {
+        width: 50px;
+    }
+
+    .contract-address {
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+.about-section {
+    background-color: #4e9843;
+    padding: 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    font-size: 80px;
+    font-family: another;
+    color: white;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.about-gif {
+    flex: 1;
+    max-width: 400px;
+    margin-right: 40px;
+}
+
+.about-gif img {
+    width: 100%;
+    height: auto;
+}
+
+.about-text {
+    flex: 2;
+    text-align: left;
+    color: white;
+    max-width: 500px;
+}
+
+.about-text p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-section h2 {
+        font-size: 40px;
+    }
+
+    .about-gif {
+        margin-right: 0;
+        margin-bottom: 20px;
+        max-width: 80%;
+    }
+
+    .about-text {
+        text-align: center;
+        max-width: 100%;
+    }
+}
+
+
+.how-to-buy-section {
+    background-color: #4e9843;
+    padding: 20px;
+    text-align: center;
+}
+
+.how-to-buy-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    transition: transform 0.2s;
+    max-width: 700px;
+    margin: 0 auto;
+    border: 3px solid black;
+}
+
+.how-to-buy-section h2 {
+    font-size: 80px;
+    font-family: another;
+    color: white;
+}
+
+.box:hover {
+    transform: scale(1.02);
+}
+
+.box .icon {
+    width: 40px;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.box h3 {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.box p {
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .how-to-buy-content {
+        grid-template-columns: 1fr;
+    }
+
+    .box {
+        margin: 0 10px;
+        max-width: none;
+    }
+
+    .how-to-buy-section h2 {
+        font-size: 40px;
+    }
+}
+
+.tokenomics-section {
+    background-color: #4e9843;
+    padding: 20px;
+    text-align: center
+}
+
+.tokenomics-section h2 {
+    font-size: 80px;
+    font-family: another;
+    color: white;
+}
+
+.tokenomics-section p {
+    color: white;
+    font-size: 20px;
+    margin: 20px 0;
+    font-weight: bolder;
+}
+
+.tokenomics-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.tokenomics-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+    width: 500px;
+    text-align: left;
+    font-size: 30px;
+    border: 3px solid black;
+}
+
+.tokenomics-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tokenomics-gif img {
+    width: 400px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .tokenomics-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tokenomics-box {
+        margin-right: 0;
+        margin-bottom: 20px;
+        max-width: 80%;
+    }
+
+    .tokenomics-gif img {
+        width: 150px;
+    }
+
+    .tokenomics-section h2 {
+        font-size: 40px;
+    }
+}
+
+.footer-section {
+    background-color: #4e9843;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-section h2 {
+    font-size: 80px;
+    font-family: another;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.social-icons img {
+    width: 70px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .social-icons {
+        flex-direction: row;
+    }
+
+    .social-icons img {
+        width: 25px;
+    }
+}
